@@ -17,11 +17,12 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="container-fluid">
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-body-secondary ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="./assets/images/Jesse_James_logo.jpg"  width="50px" alt="logo jesse"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,9 +45,11 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/detail1.html">Speedcubing</a></li>
-            <li><a class="dropdown-item" href="#">Project 2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Project 3</a></li>
+            <li><a class="dropdown-item" href="/detail2.html">Gitaar</a></li>
+            <li><a class="dropdown-item" href="/detail3.html">Piano</a></li>
+            <li><a class="dropdown-item" href="/detail4.html">Voetbal</a></li>
+            <li><a class="dropdown-item" href="/detail5.html">Boksen</a></li>
+            <li><a class="dropdown-item" href="/detail6.html">Gymnastiek</a></li>
           </ul>
         </li>
       </ul>
@@ -63,36 +66,34 @@
 </figure>
 </header>
 <main>
-  <section class="row col-sm-6">
-    <figure class="col col-sm-6"><img src="./assets/images/professionele_foto.jpg" width="100%" alt="jesse-james foto"></figure>
-    <article class="col">
-      <h2>Welkom</h2>
+  <section class="row container-fluid col-md-auto m-5">
+    <figure class="col col-sm-6"><img src="./assets/images/professionele_foto.jpg" width="50%" class="img-fluid" alt="jesse-james foto"></figure>
+    <article class="col align-items-center">
+      <h2 class="fw-bold pb-2 mb-4">Welkom</h2>
       <p>Hallo! Mijn naam is Jesse-James De Groof. Al lange tijd ben ik allerlei hobby’s en interesses aan het ontdekken en uitproberen. Deze website is een plek waar ook anderen hun unieke hobby’s en passies kunnen delen. Even een korte introductie over mezelf: van jongs af aan ben ik een creatief persoon. Ik hou van muziek en sport en droom ervan om later artiest te worden en creatieve projecten te maken voor online platformen. Daarnaast speel ik ook verschillende muziekinstrumenten.
       </p>
-      <hr>
     </article>
+    <hr>
   </section>
-  <section class="row">
-    <article>
-      <h2>Hobbies</h2>
+  <section class="container my-5">
+    <article class="row align-items-center">
+      <h2 class="fw-bold pb-2 mb-4">Hobbies</h2>
       <p>Mijn hobbies zijn speedcuben, trampolinespringen, intrumenten bespelen, voetbal, muziek produceren, fietsen, koken. Al deze hobbies doe ik even graag. Natuurlijk hou ik ook van gamen. Ik heb vele consoles gehad waaronder een nintendo Wii, de gameboy, een playstation en nog meer. Ik heb veel uren achter mijn computer en ben dan ook redelijk goed in videogames spelen. Ik vind dit nog steeds een zeer leuke activiteit.</p>
     </article>
     <hr>
   </section>
-  <section class="row">
-    <article>
-      <h2>Extra</h2>
+  <section class="container my-5">
+    <article class="row align-items-center">
+      <h2 class="fw-bold pb-2 mb-4">Extra</h2>
       <p>Het jaar dat ik 16 werd ben ik direct begonnen werken als bediener in een luxe sushirestaurant. Ik heb daar bijna elke week gewerkt. Ik hou ervan om onder de mensen te komen en kan goed met ze overwegen. Ik helpte ook in de keuken en heb zo veel kookkunsten geleerd. Nu help ik regelmatig de aardige eigenaars van een ijssalon bij mij in de buurt als kok. Ik heb ook in een sportvereniging geweest waar we als team voetbalde en af en toe wonnen. Ik heb voetbal gedaan tot mijn 17 in kfcm Hallaar. Ik heb goede leven skills en ben tweetalig opgevoed dus Engels is geen probleem voor mij. Ook kan ik matig frans spreken. Ik woon in België en ben opgegroeid in middenklasse en heb zelf gewerkt voor al wat ik heb gekocht zoals mijn gaming pc.</p>
     </article>
   </section>
 </main>
-<figure>
-  <img src="./assets/images/pexels-keira-burton-6146932.jpg" width="100%" alt="">
-</figure>
+<hr>
 <aside></aside>
-<footer class="bg-body-secondary">
-  <p class="text-center">Footer text &copy;</p>
-  <p class="text-end">deze website is volledig gemaakt en gecodeerd in html met het gebruik van bootstrap 5 css en alle rechten zijn gereserveerd voor de auteur van de website</p>
-  </footer>
+<footer class="bg-dark text-white container-fluid text-center p-5 mt-5">   
+  <p class="text-center">Jesse-James De Groof &copy;</p>
+  <p class="text-end">deze website is gemaakt met HTML, CSS en bootstrap</p>
+</footer>
 </body>
 </html>

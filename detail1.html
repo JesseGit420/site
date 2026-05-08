@@ -19,10 +19,11 @@
   <!-- eigen geschreven css voor jouw html-bestand -->
 
 </head>
+<body class="container-fluid">
 <header>
     <nav class="navbar navbar-expand-lg bg-body-secondary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="./assets/images/Jesse_James_logo.jpg"  width="50px" alt="logo jesse"></a>
+    <a class="navbar-brand" href="/index.html"><img src="./assets/images/Jesse_James_logo.jpg"  width="50px" alt="logo jesse"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,10 +43,12 @@
             Projects
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Project 1</a></li>
-            <li><a class="dropdown-item" href="#">Project 2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Project 3</a></li>
+            <li><a class="dropdown-item" href="/detail1.html">Speedcubing</a></li>
+            <li><a class="dropdown-item" href="/detail2.html">Gitaar</a></li>
+            <li><a class="dropdown-item" href="/detail3.html">Piano</a></li>
+            <li><a class="dropdown-item" href="/detail4.html">Voetbal</a></li>
+            <li><a class="dropdown-item" href="/detail5.html">Boksen</a></li>
+            <li><a class="dropdown-item" href="/detail6.html">Gymnastiek</a></li>
           </ul>
         </li>
       </ul>
@@ -56,23 +59,42 @@
     </div>
   </div>
 </nav>
-<h1 class="display-6 text-center">Project 1</h1>
+<h1 class="display-6 text-center">Speedcubing</h1>
 </header>
-<main>
+<div class="row">
+<main class="col-md-9">
   <section class="row">
-    <figure class="col">
-        <a href="/detail1.html"><img src="./assets/images/cube.png" width="20%" alt="speedcubing"></a>
+    <figure class="col-6 text-center">
+        <a href="#"><img src="./assets/images/cube.png" class="img-fluid" width="50%" alt="speedcubing"></a>
       <figcaption>google images &copy;</figcaption>
     </figure>
-    <article class="col">
+    <article class="col-6">
         <h2>speedcubing</h2>
-        <p>bij Speedcubing moet je zo snel mogelijk een standaard 3x3 kubus oplossen. Er bestaan een hele hoop andere soortgelijke puzzels in alle formaten. Mijn persoonleke beste tijd voor het oplossen van een 3x3 kubus is 16 seconden. Dit is de perfecte partytruc om aan je vrienden te laten zien. Het wereldrecord is onder de 4 seconden.</p>
+        <p>bij Speedcubing moet je zo snel mogelijk een standaard 3x3 kubus oplossen. Er bestaan een hele hoop andere soortgelijke puzzels in alle formaten. Mijn persoonleke beste tijd voor het oplossen van een 3x3 kubus is <strong>16 seconden</strong>. Dit is de perfecte partytruc om aan je vrienden te laten zien. Het wereldrecord is onder de 4 seconden.</p>
     </article>
     </section>
 </main>
-<aside></aside>
-<footer class="bg-body-secondary">   
-  <p class="text-center">Footer text &copy;</p>
-  <p class="text-end">deze website is volledig gemaakt en gecodeerd in html met het gebruik van bootstrap 5 css en alle rechten zijn gereserveerd voor de auteur van de website</p>
+
+<aside class="col col-md-3 ps-5">
+  <h3>Contactgegevens</h3>
+  <p>tel 0493333352 <br>Jesse-James De Groof</p>
+  <ul class="list-inline socials">
+    <li class="list-inline-item">
+        <a href="https://www.youtube.com"><i class="bi blauwgrijs bi-youtube"></i></a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://x.com/"><i class="bi blauwgrijs bi-twitter"></i></a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://www.instagram.com"><i class="bi blauwgrijs bi-instagram" ></i></a>
+    </li>
+  </ul>
+</aside>
+<hr>
+</div>
+<footer class="bg-dark text-white container-fluid text-center p-5 mt-5">   
+  <p class="text-center">Jesse-James De Groof &copy;</p>
+  <p class="text-end">deze website is gemaakt met HTML, CSS en bootstrap</p>
 </footer>
+</body>
 </html>

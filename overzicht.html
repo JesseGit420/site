@@ -18,13 +18,15 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
+   <link rel="stylesheet" href="/css/style.css">
 
 </head>
-<body>
+
+<body class="container-fluid">
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="./assets/images/Jesse_James_logo.jpg"  width="50px" alt="logo jesse"></a>
+    <a class="navbar-brand" href="/index.html"><img src="./assets/images/Jesse_James_logo.jpg"  width="50px" alt="logo jesse"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,9 +47,11 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/detail1.html">Speedcubing</a></li>
-            <li><a class="dropdown-item" href="#">Project 2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Project 3</a></li>
+            <li><a class="dropdown-item" href="/detail2.html">Gitaar</a></li>
+            <li><a class="dropdown-item" href="/detail3.html">Piano</a></li>
+            <li><a class="dropdown-item" href="/detail4.html">Voetbal</a></li>
+            <li><a class="dropdown-item" href="/detail5.html">Boksen</a></li>
+            <li><a class="dropdown-item" href="/detail6.html">Gymnastiek</a></li>
           </ul>
         </li>
       </ul>
@@ -57,86 +61,96 @@
       </form>
     </div>
   </div>
-</nav>
-<h1 class="display-6 text-center">Portfolio page</h1>
+  </nav>
+  <h1 class="display-6 text-center">Portfolio page</h1>
 </header>
-<main class="col col-sm-8 .bg-secondary.bg-gradient">
-  <div class="row  justify-content-center">
-    <section class="col-sm-4 border">
-        <article>
-            <h2>speedcubing</h2>
-            <p>Speedcubing is de kunst van zo snel mogelijk een standaard 3x3 kubus oplossen. Er bestaan toernooien waar je aan kan meedoen.</p>
-        </article>
-        <figure>
-            <a href="/detail1.html"><img src="./assets/images/cube.png" width="20%" alt="speedcubing"></a>
-          <figcaption>google images &copy;</figcaption>
-        </figure>
-    </section>
-    <section class="col-sm-4 border">
-        <article>
-            <h2>gitaar</h2>
-            <p>Gitaar is een snaarinstrument dat met de vingers of met een plectrum kan bespeeld worden.</p>
-        </article>
-        <figure>
-            <img src="./assets/images/gitaar.jpg" width="20%" alt="gitaar">
+
+<div class="container">
+  <div class="row">
+    <main class="col col-md-9 pe-3">
+      <section class="row"><p>Dit is de portfoliopage waarbij je al mijn projecten waarmee ik door de jaren heen aan gewerkt heb. Extra info staat voor elk onderdeel in een aparte detailpagina. Klik simpelweg op de foto's.</p></section>
+      <section class="row">
+        <article class="border shop-item col-12 col-sm-6 col-md-4">
+          <figure>
+            <a href="/detail1.html"><img src="./assets/images/cube.png" class="img-fluid" alt="speedcubing"></a>
             <figcaption>google images &copy;</figcaption>
-        </figure>
-    </section>
-    <section class="col-sm-4 border">
-        <article>
-            <h2>piano</h2>
-            <p>Piano is een toetsinstrument waarvan de klanken samen een chromatische toonladder vormen</p>
+          </figure>
+          <h2>Speedcubing</h2>
+          <p>Speedcubing is de kunst van zo snel mogelijk een standaard 3x3 kubus oplossen. Er bestaan toernooien waar je aan kan meedoen.</p>
         </article>
-        <figure>
-            <img src="./assets/images/piano.jpeg" width="20%" alt="piano">
+
+        <article class="border shop-item col-12 col-sm-6 col-md-4">
+          <figure>
+            <a href="/detail2.html"><img src="./assets/images/gitaar.jpg" class="img-fluid" alt="gitaar"></a>
             <figcaption>google images &copy;</figcaption>
-        </figure>
-    </section>
-  </div>
-  <div class="row justify-content-cente">
-    <section class="col-sm-4 border">
-        <article>
-            <h2>voetbal</h2>
-            <p>Voetbal is een wereldwijd bekende balsport waarbij teams van elf spelers de bal in het doel van de tegenstander moet krijgen.</p>
+          </figure>
+          <h2>Gitaar</h2>
+          <p>Gitaar is een snaarinstrument dat met de vingers of met een plectrum kan bespeeld worden.</p>
         </article>
-        <figure>
-            <img src="./assets/images/soccer.jpg" width="20%" alt="voetbal">
+
+        <article class="border shop-item col-12 col-sm-6 col-md-4">
+          <figure>
+            <a href="/detail3.html"><img src="./assets/images/piano.jpeg" class="img-fluid" alt="piano"></a>
             <figcaption>google images &copy;</figcaption>
-        </figure>
-    </section>
-    <section class="col-sm-4 border">
-        <article>
-            <h2>boxing</h2>
-            <p>Boksen is een vechtsport waarbij coördinatie van voeten, handen en ogen centraal staan. Je kan punten scoren door elkaars trefvlakken te raken. Je kan ook winnen door een knockout(KO) </p>
+          </figure>
+          <h2>Piano</h2>
+          <p>Piano is een toetsinstrument waarvan de klanken samen een chromatische toonladder vormen</p>
         </article>
-        <figure>
-            <img src="./assets/images/boksbal.avif" width="20%" alt="boxing">
+
+        <article class="border shop-item col-12 col-sm-6 col-md-4">
+          <figure>
+            <a href="/detail4.html"><img src="./assets/images/soccer.jpg" class="img-fluid" alt="voetbal"></a>
             <figcaption>google images &copy;</figcaption>
-        </figure>
-    </section>
-    <section class="col-sm-4 border">
-        <article>
-            <h2>gymnastiek</h2>
-            <p>gymnastiek is de verzamelnaam voor sporten waarbij enige vorm van arobatiek vereist zoals trampolinespringen.</p>
+          </figure>
+          <h2>Voetbal</h2>
+          <p>Voetbal is een wereldwijd bekende balsport waarbij teams van elf spelers de bal in het doel van de tegenstander moet krijgen.</p>
+        </article> 
+
+        <article class="border shop-item col-12 col-sm-6 col-md-4">
+          <figure>
+            <a href="detail5.html"><img src="./assets/images/boksbal.avif" class="img-fluid" alt="boxing"></a>
+            <figcaption>google images &copy;</figcaption>
+          </figure>
+          <h2>Boxing</h2>
+          <p>Boksen is een vechtsport waarbij coördinatie van voeten, handen en ogen centraal staan. Je kan punten scoren door elkaars trefvlakken te raken. Je kan ook winnen door een knockout(KO) </p>
         </article>
-        <figure>
-            <img src="./assets/images/halter.webp" width="20%" alt="gewichten">
+              
+        <article class="border shop-item col-12 col-sm-6 col-md-4">
+          <figure>
+            <a href="/detail6.html"><img src="./assets/images/halter.webp" class="img-fluid" alt="gewichten"></a>
             <figcaption>google images &copy;</figcaption>
-        </figure>
-    </section>
-  </div>
-</main>
-<aside class="col col-sm-4">
+          </figure>
+          <h2>Gymnastiek</h2>
+          <p>gymnastiek is de verzamelnaam voor sporten waarbij enige vorm van arobatiek vereist zoals trampolinespringen.</p>
+        </article>
+      </section>
+    </main>
+
+<aside class="col col-md-3 ps-5">
   <h3>Contactgegevens</h3>
-  <p>tel 0493333352 <br>Jesse-James De</p>
-  <i class="bi youtube"></i>
+  <p>tel 0493333352 <br>Jesse-James De Groof</p>
+  <ul class="list-inline socials">
+    <li class="list-inline-item">
+        <a href="https://www.youtube.com"><i class="bi blauwgrijs bi-youtube"></i></a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://x.com/"><i class="bi blauwgrijs bi-twitter"></i></a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://www.instagram.com"><i class="bi blauwgrijs bi-instagram" ></i></a>
+    </li>
+  </ul>
 </aside>
+  </div>
+</div>
+
 <figure>
     <img src="./assets/images/pexels-ozlem-kara-1081249695-29602431.jpg" width="100%" alt="">
-  </figure>
-<footer class="bg-body-secondary">
-  <p class="text-center">Footer text &copy;</p>
-  <p class="text-end">deze website is volledig gemaakt en gecodeerd in html met het gebruik van bootstrap 5 css en alle rechten zijn gereserveerd voor de auteur van de website</p>
+</figure>
+<hr>
+<footer class="bg-dark text-white container-fluid text-center p-5 mt-5">   
+  <p class="text-center">Jesse-James De Groof &copy;</p>
+  <p class="text-end">deze website is gemaakt met HTML, CSS en bootstrap</p>
 </footer>
 </body>
 </html>
