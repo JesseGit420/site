@@ -80,24 +80,24 @@
 <div class="row">
 <main class="col-md-9 m-0">
   <div id="map"></div>
-    <form class="row justify-content-center mb-3" action="https://www.example.com" method="GET">
+    <form class="row justify-content-center mb-3" name="contact" data-netlify="true" data-netlify-recaptcha="true" method="POST">
 
-      <div class="mb-3">
+      <div class="mb-3 form-group">
         <label class="form-label" for="naam">Volledige naam</label>
         <input type="text" class="form-control" name="naam" maxlength="30">
       </div>
-      <div class="mb-3">
+      <div class="mb-3 form-group">
         <label class="form-label" for="email">e-mailadres</label>
         <input type="email" class="form-control" name="email" id="">
       </div>
-      <div class="mb-3">
+      <div class="mb-3 form-group">
         <label class="form-label" for="message">Jou bericht</label>
         <textarea type="text" rows="5" class="form-control" name="message" size="32" maxlength="350" placeholder="schijf hier je bericht..."> </textarea>
-      <div class="m-3">
+      <div class="m-3 form-group">
         <label for="vol">Hoe blij ben je van deze website:</label>
         <input type="range" id="blijheid" name="blijheid" min="0" max="10">
       </div>
-      <div class="m-5">
+      <div class="m-5 form-group">
         <label for="checkbox">Welke dingen heb jij al gedaan?</label><br>
         <input type="checkbox" name="speedcubing" id="speedcubing" >speedcubing<br>
         <input type="checkbox" name="gitaar" id="gitaar" >gitaar<br>
@@ -106,8 +106,9 @@
         <input type="checkbox" name="boksen" id="boksen" >boksen<br>
         <input type="checkbox" name="gym" id="gym">gym<br>
         
-      </div>
-        <input type="submit">
+      </div class="form-group">
+        <div data-netlify-recaptcha="true"></div>
+        <button type="submit" class="btn btn-primary">Verzenden</button>
     </form>
   
 
@@ -130,7 +131,7 @@
 </div>
 <hr>
 <footer class="bg-dark text-white container-fluid text-center p-5 mt-5">   
-  <p class="text-center">Jesse-James De Groof &copy;</p>
+  <p class="text-center">Jesse-James De Groof &copy; <span id="year"></span></p>
   <p class="text-end">deze website is gemaakt met HTML, CSS en bootstrap</p>
 </footer>
 </body>
