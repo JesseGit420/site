@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oefening</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+    </script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+
+</head>
+<body class="container-fluid">
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html"><img src="./assets/images/Jesse_James_logo.jpg"  width="50px" alt="logo jesse"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html">Contact</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/overzicht.html">Portfolio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/detail1.html">Speedcubing</a></li>
+            <li><a class="dropdown-item" href="/detail2.html">Gitaar</a></li>
+            <li><a class="dropdown-item" href="/detail3.html">Piano</a></li>
+            <li><a class="dropdown-item" href="/detail4.html">Voetbal</a></li>
+            <li><a class="dropdown-item" href="/detail5.html">Boksen</a></li>
+            <li><a class="dropdown-item" href="/detail6.html">Gymnastiek</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<h1 class="display-6 text-center">Speedcubing</h1>
+</header>
+<div class="row">
+<main class="col-md-9">
+  <section class="row">
+    <figure class="col-6 text-center">
+        <a href="#"><img src="./assets/images/cube.png" class="img-fluid" width="50%" alt="speedcubing"></a>
+      <figcaption>google images &copy;</figcaption>
+    </figure>
+    <article class="col-6">
+        <h2>speedcubing</h2>
+        <p>bij Speedcubing moet je zo snel mogelijk een standaard 3x3 kubus oplossen. Er bestaan een hele hoop andere soortgelijke puzzels in alle formaten. Mijn persoonleke beste tijd voor het oplossen van een 3x3 kubus is <strong>16 seconden</strong>. Dit is de perfecte partytruc om aan je vrienden te laten zien. Het wereldrecord is onder de 4 seconden.</p>
+        <blockquote>
+        "Speedcubing draait niet alleen om snelheid, maar om focus, strategie en het doorbreken van je eigen grenzen."
+        </blockquote>
+      </article>
+    </section>
+</main>
+
+<aside class="col col-md-3 ps-5">
+  <h3>Contactgegevens</h3>
+  <p>tel 0493333352 <br>Jesse-James De Groof</p>
+  <ul class="list-inline socials">
+    <li class="list-inline-item">
+        <a href="https://www.youtube.com"><i class="bi blauwgrijs bi-youtube"></i></a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://x.com/"><i class="bi blauwgrijs bi-twitter"></i></a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://www.instagram.com"><i class="bi blauwgrijs bi-instagram" ></i></a>
+    </li>
+  </ul>
+</aside>
+<hr>
+</div>
+<footer class="bg-dark text-white container-fluid text-center p-5 mt-5">   
+  <p class="text-center">Jesse-James De Groof &copy; <span id="year"></span></p>
+  <p class="text-end">deze website is gemaakt met HTML, CSS en bootstrap</p>
+</footer>
+</body>
+</html>
